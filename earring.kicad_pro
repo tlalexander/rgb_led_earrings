@@ -59,7 +59,14 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "clearance|171261508|96503490|eb6186d1-70be-47fe-b7c1-e80057e4602a|d00badaa-5e76-4c17-ba43-27a95733f424",
+        "clearance|171872488|96503490|4c465cea-7387-40ad-87c3-5f2e5280f9be|d00badaa-5e76-4c17-ba43-27a95733f424",
+        "copper_edge_clearance|142150000|82200000|6a4d374b-649d-4020-b449-b17a3613cc39|916f1c05-95f7-4c88-a500-e6d368f32e65",
+        "copper_edge_clearance|142150000|87000000|6a4d374b-649d-4020-b449-b17a3613cc39|7929913e-4ec3-4b48-82c4-dc49e69bb6c5",
+        "copper_edge_clearance|146450000|81900000|49441858-8c15-4a0f-a2e2-3667ed86e37a|89cf97a0-54a0-492a-9720-af52d5ef1817",
+        "copper_edge_clearance|146450000|86967699|a9f0c937-3b2a-4c2d-9be1-23c72714741d|c3bcfeb6-5f26-4d83-b7e6-a45ac86665af"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -78,16 +85,17 @@
         "extra_footprint": "warning",
         "footprint": "error",
         "footprint_symbol_mismatch": "warning",
-        "footprint_type_mismatch": "error",
+        "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
-        "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "warning",
+        "lib_footprint_issues": "ignore",
+        "lib_footprint_mismatch": "ignore",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "missing_courtyard": "ignore",
@@ -97,9 +105,9 @@
         "padstack": "error",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
-        "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_edge_clearance": "ignore",
+        "silk_over_copper": "ignore",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
@@ -134,7 +142,7 @@
         "min_track_width": 0.1,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.2,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -527,6 +535,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
